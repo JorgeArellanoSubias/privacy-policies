@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Política de privacidad — Tus Pasitos</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --fg: #1a1a1a;
+      --muted: #555;
+      --link: #0b57d0;
+      --bg: #fafafa;
+      --border: #ddd;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #f0f0f0;
+        --muted: #aaa;
+        --link: #8ab4f8;
+        --bg: #121212;
+        --border: #333;
+      }
+    }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      line-height: 1.55;
+      color: var(--fg);
+      background: var(--bg);
+    }
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 3rem;
+    }
+    h1 { font-size: 1.6rem; margin: 0 0 0.5rem; }
+    h2 {
+      font-size: 1.15rem;
+      margin: 1.75rem 0 0.6rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid var(--border);
+    }
+    p, li { margin: 0 0 0.75rem; }
+    ul { padding-left: 1.25rem; margin: 0 0 0.75rem; }
+    a { color: var(--link); }
+    .meta { color: var(--muted); font-size: 0.95rem; margin-bottom: 1.25rem; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Política de privacidad — Tus Pasitos</h1>
+    <p class="meta">
+      Aplicación Android <strong>Tus Pasitos</strong>
+      (<code>com.jorgearellanosubiass.dancelibrary</code>).<br />
+      Responsable: <strong>Jorge Arellano Subías</strong>.
+      Contacto: <a href="mailto:jorgearellanosubias@gmail.com">jorgearellanosubias@gmail.com</a>.
+    </p>
+
+    <h2>1. Quién somos</h2>
+    <p>
+      Tus Pasitos es una aplicación personal para guardar un catálogo de pasos, agarres y
+      coreografías de baile en el propio teléfono. Esta política describe qué datos se tratan,
+      dónde viven y qué opciones tienes.
+    </p>
+
+    <h2>2. Datos del catálogo (en tu dispositivo)</h2>
+    <p>La app puede almacenar, si tú los introduces o importas:</p>
+    <ul>
+      <li>Pasos, agarres y coreografías (nombres, notas, etiquetas y relaciones entre ellos).</li>
+      <li>Fotos, vídeos y miniaturas asociadas a esas fichas.</li>
+      <li>Colecciones y preferencias locales de la app (por ejemplo idioma o recordatorio de copia).</li>
+    </ul>
+
+    <h2>3. Dónde se guardan</h2>
+    <p>
+      El catálogo y la media se almacenan <strong>solo en el dispositivo</strong>
+      (base de datos local SQLite y ficheros locales). No hay cuentas de usuario.
+      No hay un servidor propio del desarrollador que reciba tu catálogo ni una «nube» de
+      sincronización. Si cambias de teléfono o desinstalas sin exportar, ese contenido se pierde.
+    </p>
+
+    <h2>4. Cómo entra la media</h2>
+    <p>
+      Las fotos y vídeos entran solo cuando tú los eliges (selector del sistema / Photo Picker
+      o flujos de importación). La app <strong>no</strong> graba con la cámara ni con el
+      micrófono, y no sube media de forma automática.
+    </p>
+
+    <h2>5. Exportar, importar y compartir</h2>
+    <p>
+      Puedes generar un paquete de copia (carpeta o ZIP) e importarlo en otro dispositivo.
+      Al exportar o compartir, el sistema operativo te deja elegir el destino (correo, Drive,
+      otro teléfono, etc.). Eso lo controlas tú: <strong>no</strong> es un envío a servidores
+      del desarrollador.
+    </p>
+
+    <h2>6. Analítica de uso (opcional, con consentimiento)</h2>
+    <p>
+      Por defecto la analítica está <strong>desactivada</strong>. Solo si aceptas en la
+      pantalla de privacidad (primer uso) o en <strong>Más → Privacidad</strong>, la app
+      puede enviar métricas de uso. Puedes retirar el consentimiento en cualquier momento
+      en Más → Privacidad; la app sigue funcionando igual.
+    </p>
+    <p><strong>Qué se mide</strong> (acciones, nunca el contenido):</p>
+    <ul>
+      <li>Apertura de la app y aceptación de la analítica.</li>
+      <li>Crear o borrar pasos, agarres, coreografías o colecciones (sin nombres ni notas).</li>
+      <li>Importar media (solo el tipo: imagen o vídeo).</li>
+      <li>Empezar un juego (solo el tipo de juego).</li>
+      <li>Completar un export o un import (sin el contenido del paquete).</li>
+      <li>
+        Si la app falla: tipo de error, pantalla (plantilla de ruta, no datos tuyos),
+        modelo de dispositivo y versión de Android. <strong>Nunca</strong> el mensaje del
+        error ni el stack (pueden contener texto tuyo).
+      </li>
+    </ul>
+    <p>
+      No se envían nombres, notas, etiquetas, nombres de ficheros, rutas, media, ni
+      identificadores de filas de tu catálogo.
+    </p>
+    <p>
+      <strong>Identificador:</strong> un UUID aleatorio de instalación generado solo al
+      aceptar. No se deriva de Android ID, advertising ID ni de datos personales. Al retirar
+      el consentimiento se borran la cola local y ese identificador; si vuelves a aceptar,
+      se genera uno nuevo.
+    </p>
+    <p>
+      <strong>Sin IP ni ubicación:</strong> el proyecto descarta la IP del cliente y cada
+      evento desactiva la geolocalización por IP.
+    </p>
+    <p>
+      <strong>Encargado del tratamiento de estas métricas:</strong> PostHog
+      (PostHog EU Cloud, servidores en la Unión Europea).
+    </p>
+    <p>
+      <strong>Base jurídica:</strong> tu consentimiento (ePrivacy / LSSI). Retirarlo es tan
+      fácil como darlo.
+    </p>
+    <p>
+      <strong>Retención:</strong> los eventos se conservan en PostHog durante
+      <strong>30 días</strong>.
+    </p>
+    <p>
+      <strong>Sin otros terceros de analítica o publicidad:</strong> no hay SDKs de anuncios
+      ni venta de datos. Los informes de fallos nativos de Android pueden llegar a Google
+      Play (Android vitals) según la configuración de tu dispositivo y de Play Console;
+      no incluyen el catálogo de la app.
+    </p>
+
+    <h2>7. Cómo borrar tus datos</h2>
+    <ul>
+      <li>Puedes borrar fichas y media dentro de la app.</li>
+      <li>Desinstalar la app elimina el catálogo y la media locales de esa instalación.</li>
+      <li>Las copias que hayas exportado o compartido quedan bajo tu control (y del destino
+        que elegiste).</li>
+      <li>Si habías aceptado la analítica, al retirar el consentimiento o desinstalar se
+        deja de enviar; los eventos ya recibidos se borran de PostHog según la retención
+        de 30 días.</li>
+    </ul>
+
+    <h2>8. Permisos de Android</h2>
+    <p>
+      El build publicado no declara permisos de cámara, micrófono ni acceso amplio a la
+      galería (<code>CAMERA</code>, <code>RECORD_AUDIO</code>, <code>READ_MEDIA_IMAGES</code>,
+      <code>READ_MEDIA_VIDEO</code>). La media se elige con el selector del sistema /
+      Photo Picker, que no requiere esos permisos.
+    </p>
+
+    <h2>Cambios</h2>
+    <p>
+      Si cambia lo que se recoge (por ejemplo un nuevo tipo de métrica), esta política y
+      la declaración Data safety de Google Play se actualizarán antes de publicar ese build.
+    </p>
+
+    <footer>
+      Última actualización: 6 de noviembre de 2026.<br />
+      <a href="../">Volver al índice de políticas</a>
+    </footer>
+  </main>
+</body>
+</html>
