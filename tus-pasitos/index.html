@@ -59,7 +59,7 @@
     <h1>Política de privacidad — Tus Pasitos</h1>
     <p class="meta">
       Aplicación Android <strong>Tus Pasitos</strong>
-      (<code>com.jorgearellanosubiass.dancelibrary</code>).<br />
+      (<code>com.jorgearellanosubias.dancelibrary</code>).<br />
       Responsable: <strong>Jorge Arellano Subías</strong>.
       Contacto: <a href="mailto:jorgearellanosubias@gmail.com">jorgearellanosubias@gmail.com</a>.
     </p>
@@ -84,7 +84,9 @@
       El catálogo y la media se almacenan <strong>solo en el dispositivo</strong>
       (base de datos local SQLite y ficheros locales). No hay cuentas de usuario.
       No hay un servidor propio del desarrollador que reciba tu catálogo ni una «nube» de
-      sincronización. Si cambias de teléfono o desinstalas sin exportar, ese contenido se pierde.
+      sincronización. La app tampoco usa la copia de seguridad automática de Android, así que
+      estos datos no se suben a Google Drive. Si cambias de teléfono o desinstalas sin exportar,
+      ese contenido se pierde.
     </p>
 
     <h2>4. Cómo entra la media</h2>
@@ -113,6 +115,7 @@
     <ul>
       <li>Apertura de la app y aceptación de la analítica.</li>
       <li>Crear o borrar pasos, agarres, coreografías o colecciones (sin nombres ni notas).</li>
+      <li>Al crear un paso, un agarre o una coreografía: el tiempo empleado en rellenar el formulario.</li>
       <li>Importar media (solo el tipo: imagen o vídeo).</li>
       <li>Empezar un juego (solo el tipo de juego).</li>
       <li>Completar un export o un import (sin el contenido del paquete).</li>
@@ -174,6 +177,16 @@
       Photo Picker, que no requiere esos permisos.
     </p>
 
+    <h2>9. Seguridad</h2>
+    <ul>
+      <li>El catálogo y la media se guardan en el almacenamiento privado de la app, al que
+        Android no deja acceder a otras aplicaciones.</li>
+      <li>El desarrollador no tiene acceso a tu catálogo ni a tu media.</li>
+      <li>Las métricas, si las aceptas, se envían cifradas mediante HTTPS y solo el
+        desarrollador accede a ellas en PostHog.</li>
+      <li>Los paquetes que exportas no van cifrados: guárdalos y compártelos con cuidado.</li>
+    </ul>
+
     <h2>Cambios</h2>
     <p>
       Si cambia lo que se recoge (por ejemplo un nuevo tipo de métrica), esta política y
@@ -181,7 +194,7 @@
     </p>
 
     <footer>
-      Última actualización: 6 de noviembre de 2026.<br />
+      Última actualización: 8 de noviembre de 2026.<br />
       <a href="../">Volver al índice de políticas</a>
     </footer>
   </main>
