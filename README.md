@@ -8,6 +8,7 @@ Play Store y las apps enlazan a estas URLs HTTPS, no a ficheros `.md` del editor
 
 - Índice: https://jorgearellanosubias.github.io/privacy-policies/
 - Tus Pasitos: https://jorgearellanosubias.github.io/privacy-policies/tus-pasitos/
+- Gentuza: https://jorgearellanosubias.github.io/privacy-policies/gentuza/
 
 ## Añadir otra app
 
